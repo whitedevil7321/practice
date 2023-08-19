@@ -35,3 +35,174 @@ public static void main(String[] args) {
 ******
 ******
   */
+
+
+
+
+
+package patterns;
+
+import java.util.Scanner;
+
+class squarestar1 {
+	void printstar(int number) {
+		
+	int n=4;
+	int m=5;
+		for(int i=1;i<=number;i++) {
+		for(int j=1;j<=number;j++) {
+			if(i==1||j==1||i==number||j==number) {
+				System.out.print("*");
+			}
+			else {
+				System.out.print(" ");
+			}
+			 
+		}System.out.println();
+		
+	}
+ 
+ 
+ 
+}}
+
+ public class squarestar{
+public static void main(String[] args) {
+	squarestar1 sq=new squarestar1();
+	System.out.println("Enter Number Of Rows and Columns:");
+	Scanner scanner=new Scanner(System.in);
+	int number=scanner.nextInt();
+	sq.printstar(number);
+	
+}
+}
+Output:
+
+/*Enter Number Of Rows and Columns:
+10
+**********
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+**********
+*/
+
+
+
+
+
+package patterns;
+
+import java.util.Scanner;
+
+class squarestar1 {
+	void printstar(int number) {
+		
+	int n=4;
+	int m=5;
+	for(int i=1;i<=number;i++) {
+		
+		for(int j=1;j<=i;j++) {
+			System.out.print("*");
+			
+			
+			
+			
+			
+		}System.out.println();
+	}
+ 
+ 
+ 
+}}
+
+ public class squarestar{
+public static void main(String[] args) {
+	squarestar1 sq=new squarestar1();
+	System.out.println("Enter Number Of Rows and Columns:");
+	Scanner scanner=new Scanner(System.in);
+	int number=scanner.nextInt();
+	sq.printstar(number);
+	
+}
+}
+/*output:
+Enter Number Of Rows and Columns:
+15
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+***********
+************
+*************
+**************
+***************
+*/
+
+
+
+
+
+
+package patterns;
+
+
+import java.util.Scanner;
+
+class squarestar1 {
+	void printstar(int number) {
+		
+	int n=4;
+	int m=5;
+for(int i=number;i>=1;i--) {
+	for(int j=1;j<=i;j++) {
+		System.out.print("*");
+		
+	}System.out.println();
+
+	
+}
+	
+ 
+}}
+
+ public class squarestar{
+public static void main(String[] args) {
+	squarestar1 sq=new squarestar1();
+	System.out.println("Enter Number Of Rows and Columns:");
+	Scanner scanner=new Scanner(System.in);
+	int number=scanner.nextInt();
+	sq.printstar(number);
+	
+}
+}
+/*
+output:
+Enter Number Of Rows and Columns:
+12
+************
+***********
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+*/
