@@ -1,0 +1,37 @@
+package patterns;
+
+import java.util.Scanner;
+
+class squarestar1 {
+	void printstar(int number) {
+		for(int j=0;j<=number;j++) {
+		for(int i=0;i<=number;i++) {
+			System.out.print("*");
+			
+		}System.out.println();
+		}
+	}
+ 
+ 
+ 
+}
+
+ public class squarestar{
+public static void main(String[] args) {
+	squarestar1 sq=new squarestar1();
+	System.out.println("Enter Number Of Rows and Columns:");
+	Scanner scanner=new Scanner(System.in);
+	int number=scanner.nextInt();
+	sq.printstar(number);
+	
+}
+}
+/*Enter Number Of Rows and Columns:
+5
+******
+******
+******
+******
+******
+******
+  */
